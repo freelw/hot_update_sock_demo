@@ -15,8 +15,8 @@ int readed(int fd, char* read_buffer, int length)
 }
 
 int main(){
+    printf("program updated.\n");
     while(1) {
-        printf("program updated.\n");
         char req[5] = {0};
         readed(4, req, 5);
         printf("updated recv: %s\n", req);
