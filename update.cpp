@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+
 int readed(int fd, char* read_buffer, int length)
 {
     int recv_len = 0;
@@ -12,13 +13,13 @@ int readed(int fd, char* read_buffer, int length)
     }
     return recv_len;
 }
+
 int main(){
-    int cs = 4;
     while(1) {
-      printf("updated \n");
-    char req[5] = {0};
-    readed(cs, req, 5);
-    printf("updated req : %s\n", req);
+        printf("program updated.\n");
+        char req[5] = {0};
+        readed(4, req, 5);
+        printf("updated recv: %s\n", req);
     }
     return 0;
 }
