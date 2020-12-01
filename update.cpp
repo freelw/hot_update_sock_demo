@@ -24,5 +24,7 @@ int main(){
         }
         printf("updated recv: %s\n", req);
     }
+    close(3);
+    close(4);
     return 0;
 }
