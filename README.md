@@ -20,7 +20,7 @@
 
     program updated.
     updated recv: 1234
-    
+    
     updated recv: 1234
 
     客户端使用nc
@@ -28,5 +28,3 @@
     1234
     1234
     1234
-
-
